@@ -1,4 +1,4 @@
-from datasets import load_dataset
+import datasets
 from pathlib import Path
 datasets.config.DOWNLOADED_DATASETS_PATH = Path("/newdir")
-dataset = load_dataset("discofuse", "discofuse-sport")
+dataset = datasets.load_dataset("discofuse", "discofuse-sport")
